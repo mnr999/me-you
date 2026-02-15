@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Portfolio naufal & aidila💖</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="70">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar-example">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-heart-fill text-danger"></i> Our Love naufal & aidila
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#journey">Journey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#music">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#future">Future</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <!-- Kiri: Teks -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="hero-text">
+                        <h1 class="display-1 fw-bold mb-4 text-white">Our Story naufal & aidila 💖</h1>
+                        <p class="lead fs-3 mb-5 text-light">Dua manusia, satu perjalanan.</p>
+                        <button class="btn btn-outline-light btn-lg" id="playMusicBtn">
+                            <i class="bi bi-play-fill me-2"></i>Mulai Perjalanan
+                        </button>
+                        <!-- Hidden Audio Element -->
+                        <audio id="loveAudio" loop>
+                            <source src="music/lagu.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <!-- Kanan: Foto -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="hero-image-wrapper">
+                        <img src="images/photo_15_2026-02-12_07-59-45.jpg" alt="Our Photo" class="img-fluid rounded-4 hero-img shadow-lg">
+                        <div class="hero-frame"></div>
+                        <div class="hero-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="text-white">
+                <i class="bi bi-chevron-down bounce"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Kiri: Dua Foto -->
+                <div class="col-md-5 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-images-wrapper">
+                        <div class="about-photo-row">
+                            <div class="about-img-container">
+                                <img src="images/photo_1_2026-02-15_10-15-42.jpg" alt="Photo 1" class="img-fluid rounded shadow-lg about-img-1">
+                                <div class="about-img-frame"></div>
+                            </div>
+                            <div class="about-img-container">
+                                <img src="images/photo_2_2026-02-15_10-15-42.jpg" alt="Photo 2" class="img-fluid rounded shadow-lg about-img-2">
+                                <div class="about-img-frame frame-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kanan: Deskripsi + Tanggal -->
+                <div class="col-md-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <h2 class="section-title mb-4">Tentang Kami</h2>
+                    <p class="lead text-light mb-4">
+                        Kami adalah dua jiwa yang dipertemukan oleh takdir. Dari pertama bertemu, kami tahu bahwa ini adalah awal dari sesuatu yang indah.
+                    </p>
+                    <p class="text-rose mb-4">
+                        Setiap hari adalah anugerah. Setiap momen bersama adalah kenangan yang tak terlupakan. Kami melanjutkan perjalanan ini bersama, tangan dalam tangan, hati yang bersatu.
+                    </p>
+                    
+                    <!-- Tanggal Important -->
+                    <div class="important-dates mt-4">
+                        <div class="row g-3">
+                            <!-- Tanggal Jadian -->
+                            <div class="col-12">
+                                <div class="date-card bg-card p-3 rounded">
+                                    <div class="d-flex align-items-center">
+                                        <div class="date-icon me-3">
+                                            <i class="bi bi-heart-fill text-danger"></i>
+                                        </div>
+                                        <div>
+                                            <small class="text-blue d-block">Tanggal Jadian</small>
+                                            <span class="fw-bold text-rose" id="anniversaryDate">5 Mei 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tanggal Lahir Pasangan 1 -->
+                            <div class="col-6">
+                                <div class="date-card bg-card p-3 rounded">
+                                    <div class="d-flex align-items-center">
+                                        <div class="date-icon me-3">
+                                            <i class="bi bi-person-fill text-rose"></i>
+                                        </div>
+                                        <div>
+                                            <small class="text-rose d-block">Ultah aidila nur barqi</small>
+                                            <span class="fw-bold text-white">28 September 2007</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tanggal Lahir Pasangan 2 -->
+                            <div class="col-8">
+                                <div class="date-card bg-card p-3 rounded">
+                                    <div class="d-flex align-items-center">
+                                        <div class="date-icon me-3">
+                                            <i class="bi bi-person-fill text-rose"></i>
+                                        </div>
+                                        <div>
+                                            <small class="text-rose d-block">Ultah Muhammad Naufal Ramadhan</small>
+                                            <span class="fw-bold text-white">11 Oktober 2007</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Love Counter -->
+                    <div class="love-counter mt-4">
+                        <h5 class="text-rose mb-3">💕 Waktu Bersama</h5>
+                        <div class="counter-wrapper d-flex gap-3 flex-wrap">
+                            <div class="counter-box">
+                                <span class="counter-number" id="days">0</span>
+                                <span class="counter-label">Hari</span>
+                            </div>
+                            <div class="counter-box">
+                                <span class="counter-number" id="hours">0</span>
+                                <span class="counter-label">Jam</span>
+                            </div>
+                            <div class="counter-box">
+                                <span class="counter-number" id="minutes">0</span>
+                                <span class="counter-label">Menit</span>
+                            </div>
+                            <div class="counter-box">
+                                <span class="counter-number" id="seconds">0</span>
+                                <span class="counter-label">Detik</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Perjalanan Cinta Kami 💕</h2>
+            <div class="row">
+                <!-- Journey Card 1 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card journey-card border-0 shadow-lg h-100">
+                        <div class="journey-img-wrapper">
+                            <img src="images/photo_2026-02-15_12-27-33.jpg" class="card-img-top journey-img" alt="First Meeting">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-rose">Awal ketemu</h5>
+                            <p class="card-text text-white">Semua berawal dari pertemuan sederhana. Tatapan pertama yang biasa saja, tapi entah kenapa terasa berbeda. Dari situ, cerita kita mulai ditulis.</p>
+                            <span class="badge bg-rose">20 April 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Journey Card 2 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card journey-card border-0 shadow-lg h-100">
+                        <div class="journey-img-wrapper">
+                            <img src="images/photo_2026-02-15_10-29-00.jpg" class="card-img-top journey-img" alt="First Meeting">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-rose">First date</h5>
+                            <p class="card-text text-white">Hari pertama kita bertemu, aku belum tahu kalau kamu akan jadi alasan bahagiaku setiap hari setelahnya.</p>
+                            <span class="badge bg-rose">12 mei 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Journey Card 3 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card journey-card border-0 shadow-lg h-100">
+                        <div class="journey-img-wrapper">
+                            <img src="images/photo_2026-02-15_10-33-36.jpg" class="card-img-top journey-img" alt="First Date">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-rose">Hari ulang tahun dia</h5>
+                            <p class="card-text text-white">Hari di mana seseorang yang paling berharga dalam hidupku dilahirkan. Dunia mungkin biasa saja hari itu, tapi bagiku… semesta sedang menyiapkan kebahagiaan yang suatu hari akan aku temui.</p>
+                            <span class="badge bg-rose">28 September 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Journey Card 4 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card journey-card border-0 shadow-lg h-100">
+                        <div class="journey-img-wrapper">
+                            <img src="images/photo_2026-02-15_10-36-41.jpg" class="card-img-top journey-img" alt="Anniversary">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-rose">Hari ulang tahun aku</h5>
+                            <p class="card-text text-white">Di hari ini, lahirlah seseorang yang kelak akan jadi alasan bahagiaku. Terima kasih sudah hadir di dunia dan memilih untuk mencintaiku.</p>
+                            <span class="badge bg-rose">11 Oktober 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Journey Card 5 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card journey-card border-0 shadow-lg h-100">
+                        <div class="journey-img-wrapper">
+                            <img src="images/photo_2026-02-15_12-17-28.jpg" class="card-img-top journey-img" alt="Anniversary">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-rose">Valentine day</h5>
+                            <p class="card-text text-white">Valentine bukan cuma soal cokelat dan bunga, tapi tentang kamu yang selalu jadi alasan aku merasa dicintai setiap hari. Terima kasih sudah memilihku.</p>
+                            <a href="https://mnr999.github.io/valentine_ayayy/" target="_blank" rel="noopener noreferrer" class="btn btn-valentine btn-sm mt-3 mb-2">
+                                <i class="bi bi-heart-fill me-2"></i>Lihat Website Valentine
+                            </a>
+                            <br>
+                            <span class="badge bg-rose">14 Februari 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Galeri Cinta 📸</h2>
+            <div class="row g-3">
+                <!-- Gallery Item 1 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_15_2026-02-12_07-59-45.jpg" alt="Gallery 1" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_10-29-00.jpg" alt="Gallery 2" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_10-33-36.jpg" alt="Gallery 3" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_10-36-41.jpg" alt="Gallery 4" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-31.jpg" alt="Gallery 5" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-27-33.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 7 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-31 (2).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 8 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-31 (4).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 9 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-28.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 10 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-28 (2).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 11 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-29.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 12 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-30.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 13 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-30 (2).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 14 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-31 (3).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 15 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-27.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 16 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-27 (2).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 17 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-27 (3).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 18 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-27 (4).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 19 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-27 (5).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 20 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-27 (6).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 21 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-25.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 22 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-25 (2).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 23 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-26.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 24 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-27 (7).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 25 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-25 (3).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 26 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-25 (4).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 27 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-25 (5).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 28 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-24.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 29 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-24 (2).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 30 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-24 (3).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 31 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-23.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 32 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-23 (2).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 33 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-23 (3).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Gallery Item 34 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-35-39.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Gallery Item 35 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_13-47-28.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Gallery Item 36 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-23 (3).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 37 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-22.jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 38 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-22 (2).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 40 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-23 (4).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 41 -->
+                <div class="col-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="images/photo_2026-02-15_12-40-23 (5).jpg" alt="Gallery 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="images/photo_15_2026-02-12_07-59-45.jpg" alt="" id="modalImage" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Section -->
+    <section id="music" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Musik Cinta 🎵</h2>
+            <div class="row g-4">
+                <!-- Music 1: Spontan -->
+                <div class="col-md-4">
+                    <div class="music-card card border-0 shadow-lg" data-aos="fade-up">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <div class="music-cover d-inline-block">
+                                    <img src="images/spontan.jpg" alt="Music Cover" class="img-fluid rounded">
+                                    <div class="equalizer" id="equalizer1">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-white mb-1">Spontan</h4>
+                                <p class="text-white mb-3">Deabdil</p>
+                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                    <button class="btn btn-outline-light" id="playPauseBtn1">
+                                        <i class="bi bi-play-fill" id="playPauseIcon1"></i>
+                                    </button>
+                                    <div class="music-progress flex-grow-1" style="max-width: 150px;">
+                                        <div class="progress" style="height: 4px;">
+                                            <div class="progress-bar bg-rose" role="progressbar" style="width: 0%;" id="musicProgress1"></div>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="small text-muted" id="currentTime1">0:00</span>
+                                            <span class="small text-muted" id="duration1">0:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Music 2: Adaptasi -->
+                <div class="col-md-4">
+                    <div class="music-card card border-0 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <div class="music-cover d-inline-block">
+                                    <img src="images/adaptasi.jpg" alt="Music Cover" class="img-fluid rounded">
+                                    <div class="equalizer" id="equalizer2">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-white mb-1">Adaptasi</h4>
+                                <p class="text-white mb-3">Tulus</p>
+                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                    <button class="btn btn-outline-light" id="playPauseBtn2">
+                                        <i class="bi bi-play-fill" id="playPauseIcon2"></i>
+                                    </button>
+                                    <div class="music-progress flex-grow-1" style="max-width: 150px;">
+                                        <div class="progress" style="height: 4px;">
+                                            <div class="progress-bar bg-rose" role="progressbar" style="width: 0%;" id="musicProgress2"></div>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="small text-muted" id="currentTime2">0:00</span>
+                                            <span class="small text-muted" id="duration2">0:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Music 3: About You -->
+                <div class="col-md-4">
+                    <div class="music-card card border-0 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <div class="music-cover d-inline-block">
+                                    <img src="images/about you.jpg" alt="Music Cover" class="img-fluid rounded">
+                                    <div class="equalizer" id="equalizer3">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-white mb-1">About You</h4>
+                                <p class="text-white mb-3">The 1975</p>
+                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                    <button class="btn btn-outline-light" id="playPauseBtn3">
+                                        <i class="bi bi-play-fill" id="playPauseIcon3"></i>
+                                    </button>
+                                    <div class="music-progress flex-grow-1" style="max-width: 150px;">
+                                        <div class="progress" style="height: 4px;">
+                                            <div class="progress-bar bg-rose" role="progressbar" style="width: 0%;" id="musicProgress3"></div>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="small text-muted" id="currentTime3">0:00</span>
+                                            <span class="small text-muted" id="duration3">0:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section id="future" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Masa Depan Kita 💍</h2>
+            <p class="lead text-light mb-5">Aku ingin menghabiskan sisa hidupku bersamamu. Maukah kamu menjadi pasangan hidupku?</p>
+            
+            <div class="future-buttons" data-aos="zoom-in" data-aos-duration="1000">
+                <button class="btn btn-danger btn-lg me-3 mb-2" id="yesBtn">
+                    <i class="bi bi-heart-fill me-2"></i>Iya 💕
+                </button>
+                <button class="btn btn-secondary btn-lg mb-2" id="noBtn">Engga 😢</button>
+            </div>
+
+            <div id="romanticMessage" class="mt-4" style="display: none;">
+                <div class="alert alert-danger border-0 shadow-lg" role="alert" data-aos="fade-up">
+                    <h4 class="alert-heading">💖 Kamu bilang IYA! 💖</h4>
+                    <p class="mb-0">Terima kasih sudah menerima aku dalam hidupmu. Aku janji akan mencintaimu selamanya. Sekarang dan selamanya! ❤️</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0 text-white">
+                Made with <i class="bi bi-heart-fill text-danger"></i> by mnr
+            </p>
+            <small class="text-white">&copy; 2026 Our Love naufal & aidila</small>
+        </div>
+    </footer>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
